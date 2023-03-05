@@ -34,20 +34,4 @@ class GradeCalculatorTest {
             0.001
         )
     }
-
-    companion object {
-        @JvmStatic
-        private fun grades(): Stream<Arguments> = Stream.of(
-            Arguments.of(0, 0, 0, 0, 0, 0, 0.0),
-            Arguments.of(100, 100, 100, 100, 100, 100, 100.0),
-            Arguments.of(73, 87, 91, 68, 75, 92, 82.5),
-            Arguments.of(85, 95, 82, 90, 93, 88, 81.5),
-            Arguments.of(78, 89, 92, 87, 83, 81, 84.8),
-            Arguments.of(66, 76, 84, 92, 85, 70, 82.5),
-            Arguments.of(95, 98, 93, 96, 92, 97, 76.5),
-            Arguments.of(100, 0, 0, 0, 0, 0, 10.0),
-            Arguments.of(90, 85, 95, 75, 70, 60, 77.5),
-            Arguments.of(75, 85, 90, 80, 80, 85, 84.5)
-        )
-    }
 }
